@@ -4,6 +4,7 @@
 和浏览器端渲染对比 <a href='https://github.com/monkeyWangs/doubanMovie'> 浏览器端doubanMovie</a>
 ## 简单的看下gif：注意地址栏跟浏览器端渲染带 #/ 不一样。而是对应得 /
 <img width="600" alt="screen shot 2016-08-11 at 6 06 57 pm" src="https://github.com/monkeyWangs/doubanMovie-SSR/blob/master/public/doubanSSR.gif">
+
 ## Features
 
 - 服务器端
