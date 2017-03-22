@@ -1,8 +1,8 @@
 # 豆瓣电影服务端渲染
 技术基础 Vue 2.0 + vue-router + vuex + element-ui + nodejs 服务端渲染
 线上演示环境 贴一下浏览器渲染的地址吧，项目新鲜出炉 还没来得及部署到云服务器上
-## 简单的看下gif：注意地址栏跟浏览器端渲染带 #/ 不一样
-<img width="973" alt="screen shot 2016-08-11 at 6 06 57 pm" src="https://github.com/monkeyWangs/doubanMovie-SSR/blob/master/public/doubanSSR.gif">
+## 简单的看下gif：注意地址栏跟浏览器端渲染带 #/ 不一样。而是对应得 /
+<img width="600" alt="screen shot 2016-08-11 at 6 06 57 pm" src="https://github.com/monkeyWangs/doubanMovie-SSR/blob/master/public/doubanSSR.gif">
 ## Features
 
 - 服务器端
