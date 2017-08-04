@@ -89,8 +89,21 @@ app.get('*', (req, res) => {
       console.error(err)
     }
   }
-
-  renderer.renderToStream({ url: req.url })
+  var title = ''
+  switch (req.url) {
+    case '/moving':
+      title = '正在热映'
+      break;
+    case '/upcoming':
+      title = '即将上映'
+      break;
+    case '/top250':
+      title = 'Top250'
+      break;
+    default:
+      title = '404'
+  }
+  renderer.renderToStream({ title, url: req.url })
     .on('error', errorHandler)
     .on('end', () => console.log(`whole request: ${Date.now() - s}ms`))
     .pipe(res)

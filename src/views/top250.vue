@@ -25,6 +25,7 @@
       }
     },
     mounted () {
+      document.title = 'top250'
       this.$store.commit('PAGE_START', {start: 8})
       this.$store.dispatch('loadingtop250')
     },

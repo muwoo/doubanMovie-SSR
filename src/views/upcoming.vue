@@ -70,6 +70,7 @@
       /**
        * 获取即将上映列表
        */
+      document.title = '即将上映'
       this.$store.dispatch('getUpcoming')
     },
     methods: {

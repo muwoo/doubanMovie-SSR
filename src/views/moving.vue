@@ -52,7 +52,7 @@
       }
     },
     mounted () {
-      console.log(this.$store.state.moving)
+      document.title = '正在热映'
       this.$store.dispatch('getMoving')
     },
     methods: {
