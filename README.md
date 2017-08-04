@@ -1,8 +1,14 @@
 # 豆瓣电影服务端渲染
 技术基础 Vue 2.0 + vue-router + vuex + element-ui + nodejs 服务端渲染
-线上演示环境 贴一下浏览器渲染的地址吧，项目新鲜出炉 还没来得及部署到云服务器上
+线上演示环境 贴一下浏览器渲染的地址吧
 和浏览器端渲染对比 <a href='https://github.com/monkeyWangs/doubanMovie'> 浏览器端doubanMovie</a>
-## 简单的看下gif：注意地址栏跟浏览器端渲染带 #/ 不一样。而是对应得 /
+## 相关说明
+可以看到，刚进来的时候是有个loading的，所以这个服务端渲染并没有完全渲染整个页面
+而是选择性渲染了相关的部分。clone下源码可以发现，我所有的异步数据并没有 `prePatch`,
+所以数据没有同步到服务端，也就是说，刚开始渲染的时候，只是返回了一些基本的`dom`信息
+这个对于数据SEO不重要还是不错的体验方式，因为我抛弃了数据异步加载的时间。
+这种方式一般适合`title`和`mate`标签的SEO
+
 <img width="600" alt="screen shot 2016-08-11 at 6 06 57 pm" src="https://github.com/monkeyWangs/doubanMovie-SSR/blob/master/public/doubanSSR.gif">
 
 ## Features
