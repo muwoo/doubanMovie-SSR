@@ -17,11 +17,11 @@ Vue.use(Router)
 
 const createListView = name => () =>
   System.import('../views/CreateListView').then(m => m.createListView(name))
-const Top250 = () => System.import('../views/Top250.vue')
+const Top250 = () => System.import('../views/top250.vue')
 const MoviesDetail = () => System.import('../views/moviesDetail.vue')
 const Search = () => System.import('../views/searchList.vue')
 const moving = () => System.import('../views/moving.vue')
-const Upcoming = () => System.import('../views/Upcoming.vue')
+const Upcoming = () => System.import('../views/upcoming.vue')
 
 export default new Router({
   mode: 'history',
